@@ -9,8 +9,10 @@ def open_csv(file_name):
 
 
 def get_csv_file_name(argv_list):
-    # implent this function
-    pass  # delete this
+    if len(argv_list) == 1:
+        return None
+    else:
+        return argv_list[1]
 
 
 def format_output(person):
